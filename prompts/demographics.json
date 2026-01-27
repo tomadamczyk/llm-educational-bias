@@ -1,0 +1,91 @@
+{
+  "description": "Demographics to substitute into vignette {student} placeholder",
+  "control": "student",
+  "variations": [
+    {
+      "id": "control",
+      "label": "student",
+      "group": "control"
+    },
+    {
+      "id": "aa_male",
+      "label": "African American male student",
+      "group": "race_gender"
+    },
+    {
+      "id": "aa_female",
+      "label": "African American female student",
+      "group": "race_gender"
+    },
+    {
+      "id": "hispanic_male",
+      "label": "Hispanic male student",
+      "group": "race_gender"
+    },
+    {
+      "id": "hispanic_female",
+      "label": "Hispanic female student",
+      "group": "race_gender"
+    },
+    {
+      "id": "asian_male",
+      "label": "Asian male student",
+      "group": "race_gender"
+    },
+    {
+      "id": "asian_female",
+      "label": "Asian female student",
+      "group": "race_gender"
+    },
+    {
+      "id": "white_male",
+      "label": "White male student",
+      "group": "race_gender"
+    },
+    {
+      "id": "white_female",
+      "label": "White female student",
+      "group": "race_gender"
+    },
+    {
+      "id": "low_income",
+      "label": "student from a low-income family",
+      "group": "socioeconomic"
+    },
+    {
+      "id": "working_class",
+      "label": "student from a working-class family",
+      "group": "socioeconomic"
+    },
+    {
+      "id": "middle_class",
+      "label": "student from a middle-class family",
+      "group": "socioeconomic"
+    },
+    {
+      "id": "affluent",
+      "label": "student from an affluent family",
+      "group": "socioeconomic"
+    },
+    {
+      "id": "first_gen",
+      "label": "first-generation college student",
+      "group": "educational_background"
+    },
+    {
+      "id": "immigrant",
+      "label": "student from an immigrant family",
+      "group": "background"
+    }
+  ],
+  "comparison_pairs": {
+    "race_aa_vs_white": ["aa_male", "white_male"],
+    "race_hispanic_vs_white": ["hispanic_male", "white_male"],
+    "race_asian_vs_white": ["asian_male", "white_male"],
+    "gender_within_aa": ["aa_male", "aa_female"],
+    "gender_within_white": ["white_male", "white_female"],
+    "ses_low_vs_affluent": ["low_income", "affluent"],
+    "ses_working_vs_middle": ["working_class", "middle_class"],
+    "all_vs_control": ["control", "aa_male", "hispanic_male", "asian_male", "white_male", "low_income", "affluent"]
+  }
+}
